@@ -16,6 +16,10 @@ const ReceiptSchema = mongoose.Schema(
             type: String,
             index: true,
         },
+        amount: {
+            type: String,
+            index: true,
+        },
         timestamp: {
             type: Date,
             default: Date.now(),
