@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
-// Receipt Schema
+// Receipt Schema1
 const ReceiptSchema = mongoose.Schema(
     {
         description: {
