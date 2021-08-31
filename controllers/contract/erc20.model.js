@@ -1,8 +1,8 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
-// Contract Schema
-const ContractSchema = mongoose.Schema(
+// ERC20Token Schema
+const ERC20TokenSchema = mongoose.Schema(
     {
         address: {
             type: String,
@@ -23,9 +23,12 @@ const ContractSchema = mongoose.Schema(
         imageUrl: {
             type: String,
         },
+        symbol: {
+            type: String,
+        },
         kind: {
             type: String,
-            default: 'Contract',
+            default: 'ERC20Token',
         },
     },
     {
@@ -36,4 +39,7 @@ const ContractSchema = mongoose.Schema(
     }
 );
 
-const Contract = (module.exports = mongoose.model('Contract', ContractSchema));
+const ERC20Token = (module.exports = mongoose.model(
+    'ERC20Token',
+    ERC20TokenSchema
+));
