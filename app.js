@@ -44,7 +44,7 @@ const main = async () => {
     });
 };
 main();
-
+// FARHAD
 // const ethers = require('ethers');
 
 // const provider = new ethers.providers.InfuraProvider(
