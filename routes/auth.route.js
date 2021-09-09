@@ -6,6 +6,7 @@ router.get('/nonce/:addr', (req, res, next) => {
     const body = req.params || {};
     UserController.getNonceForAddress(body.addr)
         .then((nonce) => {
+            console.log('nonce', nonce);
             res.json({nonce: nonce});
         })
         .catch((err) => {
